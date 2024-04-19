@@ -1,0 +1,110 @@
+<!-- 
+   Este es el código HTML de la página de inicio de un sitio web para una gestoría de automóviles llamada "Gestoría del Automotor Othala". 
+    El código incluye las secciones de cabecera, contenido principal y pie de página, así como enlaces a hojas de estilo CSS y Google Fonts.
+    La sección de cabecera contiene el logotipo y el menú de navegación, mientras que el contenido principal incluye información sobre los servicios de la agencia y su ubicación.
+    La sección de pie de página incluye enlaces a las cuentas de redes sociales de la agencia e información de contacto, así como un aviso de copyright.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestoría del Automotor Othala | Home</title>
+    <link rel="shortcut icon" href="./img/logo-ico.ico" type="image/x-icon">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/reset.css"> <!--1° Elimino configuraciones por defecto-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="cont-logo">
+            <a href="./index.html">
+                <div>
+                    <img id="logo01" src="./img/logo othala-verde01.png" width="200" alt="Logo Gestoría Othala">
+                </div>
+                <img src="./img/logo othala-verde02.png" width="200" alt="Logo Gestoría Othala">
+            </a>
+        </div>
+
+        <nav class="cont-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <section class="portada-img">
+            <h1>GESTORIA DEL AUTOMOTOR </h1>
+            <img src="./img/banner7.2.jpg" alt="Imagen de portada">
+
+
+
+
+
+        </section>
+        <section class="principal" id="nosotros">
+            <div>
+                <h1 class="titulo-principal">Nosotros</h1>
+            </div>
+            <p>En diciembre del 2012, en la Ciudad de Monte Grande nació <em>Gestoría del Automotor Othala</em> con el
+                fin de brindar al cliente un servicio de calidad y eficiencia respecto a trámites dependientes de la
+                Dirección Nacional del Registro de la Propiedad Automotor (DNRPA).
+                Entre nuestros servicios el cliente podrá solicitar asesoramiento online, informes, armado y/o
+                presentación de trámites en general en cualquier provincia del país.
+            </p>
+        </section>
+
+        <section class="principal">
+            <h1 class="titulo-principal">Servicios</h1>
+            <p>Asesoramiento, informes, armado y/o presentación de trámites automotores en general.
+                Consultas y gestiones online desde cualquier parte del país sin moverte de tu casa.</p>
+        </section>
+
+        <section class="mapa">
+            <h1 class="titulo-principal">Nuestra Ubicación</h1>
+            <p>Nos encontramos en el histórico Barrio Malvinas.</p>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.055892770508!2d-58.47760298278754!3d-34.8031294145285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd1bfab7cc74b%3A0x9787d5fc598987a!2sGestor%C3%ADa%20del%20Automotor%20Othala%20-%20Monte%20Grande!5e0!3m2!1ses-419!2sar!4v1692306291307!5m2!1ses-419!2sar"
+                    width="850" height="300" style="border:0;" allowfullscreen="auto" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="cont-redes">
+            <div><a href="https://api.whatsapp.com/send?phone=541134145324&text=" target="_blank">
+                    <img src="./img/whatsapp 128-1.png" width="30" alt="whatsapp">
+                </a></div>
+
+            <div><a href="https://www.instagram.com/gestoriadelautomotorothala/" target="_blank">
+                    <img src="./img/instagram 128-1.png" width="30" alt="instagram">
+                </a></div>
+
+            <div><a href="https://www.facebook.com/gestoriadelautomotorothala" target="_blank">
+                    <img src="./img/facebook 128-1.png" width="30" alt="facebook">
+                </a></div>
+
+            <div><a href="mailto: gestoriadelautomotor.info@gmail.com" target="_blank">
+                    <img src="./img/correo-electronico 128-1.png" width="30" alt="e-mail">
+                </a></div>
+        </div>
+        <p class="copyright">&copy Copyright Grupo Othala - 2023</p>
+    </footer>
+</body>
+
+</html>

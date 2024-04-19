@@ -1,0 +1,429 @@
+body {
+    background: linear-gradient(#FFFFFF, #EBE3C8, #cccccc);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Estilos para el contenedor del logo y la barra de navegación */
+header {
+    text-align: center;
+    background-color: #155F4E;
+}
+
+.cont-logo {
+    display: flex;
+    justify-content: center;
+    background-color: #155F4E;
+}
+
+#logo01 {
+    animation: girar 4s infinite linear;
+}
+
+@keyframes girar {
+    from {
+        transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(-1);
+    }
+}
+
+/* Estilos para el contenedor de la barra de navegación */
+.cont-nav {
+    display: flex;
+    /* Activa Flexbox */
+    flex-flow: row wrap;
+    overflow: hidden;
+    background-color: #155F4E;
+    justify-content: space-between;
+    /* Distribuye el espacio uniformemente entre los elementos */
+    align-items: center;
+    /* Alinea los elementos verticalmente en el centro */
+    width: 100%;
+    /* Asegura que la barra de navegación ocupe todo el ancho */
+    padding: 0 10px;
+    /* Añade un poco de relleno a los lados si es necesario */
+    box-sizing: border-box;
+    /* Incluye el padding en el cálculo del ancho */
+    /*position: fixed; /* Fija la barra de navegación en la parte superior */
+    /*top: 0; /* Alinea la barra de navegación en la parte superior de la pantalla */
+    /*z-index: 1000; /* Asegura que la barra de navegación se mantenga por encima de otros elementos */
+}
+
+/* Estilos para los enlaces dentro de la barra de navegación */
+.cont-nav a {
+    display: flex;
+    flex: 1;
+    /* Asigna la misma proporción a todos los enlaces */
+    text-align: center;
+    /* Centra el texto de los enlaces */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* Color del texto para los botones */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    /* Espaciado interno para que parezcan botones */
+    margin: 4px;
+    /* Espacio entre los botones */
+    background-color: #155F4E;
+    /* Color de fondo para los botones */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    border-radius: 5px;
+    /* Bordes redondeados para los botones */
+    transition: background-color 0.3s;
+    /* Transición suave para el efecto de hover */
+
+}
+
+/* Estilos para el efecto hover en los enlaces/botones */
+.cont-nav a:hover {
+    color: #FF961B;
+    /* Cambia el color de fondo al pasar el ratón por encima */
+    text-decoration: underline;
+    /* Agrandar los enlaces al pasar el mouse sobre ellos */
+    transform: scale(1.1);
+    /* Ajusta el valor de escala según lo que desees */
+    transition: box-shadow 0.3s;
+    /* Transición suave para el efecto de sombra */
+    box-shadow: 0 0 10px #FFFFFF;
+    /* Sombra blanca alrededor del botón */
+    /*color: #FFFFFF; /* Opcional: Cambiar el color del texto si es necesario */
+}
+
+.cont-serv {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 25px;
+}
+
+.servicios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 10px;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background: #155f4e07;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 4px solid #155F4E;
+    border-radius: 12px;
+}
+
+.servicios:hover {
+    transform: scale(1.05);
+    /* Agrandar ligeramente el elemento*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra negra */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Transición suave para el efecto */
+}
+
+.servicios div:hover {
+    border-color: #155F4E;
+    transform: scale(1.05);
+    /* Agrandar ligeramente el elemento*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra negra*/
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Transición suave para el efecto*/
+}
+
+.servicios div:active {
+    border-color: #FF961B;
+}
+
+.servicios h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.servicio-info {
+    font-size: 16px;
+}
+
+.servicio-info em {
+    font-size: 14px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.servicio-precio {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer {
+    background: #155F4E;
+    text-align: center;
+    padding: 20px;
+    margin: 1vw 0;
+}
+
+.cont-redes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 10px;
+    /* Agrandar los iconos y añadir sombra al pasar el mouse */
+    /*transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave */
+    /*box-shadow: 0 0 10px #FFFFFF; /* Añade una sombra blanca */
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label,
+form legend {
+    display: flex;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-form {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.enviar {
+    display: flex;
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #155F4E;
+    border: none;
+    border-radius: 25px;
+    transition: 1s all;
+    cursor: pointer;
+    justify-content: center;
+    margin: 1%;
+}
+
+.enviar:hover {
+    background: #155F4E;
+    transform: scale(1.1);
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+}
+
+.tipo-vehiculo{
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-asesoramiento {
+    width: 8vw;
+    height: 5vw;
+    margin: 0 38%;
+    border-radius: 10px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    width: 940px;
+    padding: 1.5em 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.principal p {
+    margin: 0 0 auto;
+   /* font-size: 100%; */
+   font-size: 1em; /* Tamaño de fuente relativo */
+  line-height: 1.5; /* Altura de línea relativa */
+  
+}
+
+
+.principal em {
+    font-style: italic;
+}
+
+
+.mapa {
+    display: flex;
+    width: 940px;
+    padding: 3em 0;
+}
+
+/* Asegurarse de que el contenedor principal no tiene margen ni relleno que afecte */
+.main,
+.mapa {
+    display: flex;
+    width: 100%;
+    /* Establece el ancho al 100% */
+    margin: 0;
+    /* Elimina cualquier margen */
+    padding: 0;
+    /* Elimina cualquier relleno */
+    box-sizing: border-box;
+    /* Asegura que el padding y el border estén incluidos en el ancho total */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mapa iframe {
+    display: flex;
+    width: 100%;
+    /* Establece el ancho al 100%  */
+    height: 300px;
+    /* Altura fija, pero puedes ajustarla como necesites */
+    border: none;
+    /* Elimina el borde del iframe */
+    justify-items: center;
+}
+
+.mapa p {
+    display: flex;
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+/* Estilos para la sección de la imagen de portada */
+.portada-img {
+    display: flex;
+    width: 100%;
+    /* Establece el ancho al 100% */
+    margin: 0;
+    /* Elimina cualquier margen */
+    padding: 0;
+    /* Elimina cualquier relleno */
+    overflow: hidden;
+    /* Asegura que no se desborde del contenedor */
+}
+
+/* Estilos para la imagen dentro de la sección de portada */
+.portada-img img {
+    display: flex;
+    width: 100%;
+    /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+
+
+
+}
+
+.portada-img h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+/* Estilos para cuando la barra de navegación se fije */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s;
+    /* Transición suave al cambiar de posición */
+}
+
+/* Estilos para pantallas pequeñas (móviles vertical) */
+@media (max-width: 480px) {
+    header {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .principal{
+        font-size: 0.9em; /* Reducir el tamaño de fuente para pantallas pequeñas */
+        padding: 10px; /* Añadir un poco de espacio alrededor del párrafo */
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles horizontal) */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Estilos para pantallas pequeñas en posición horizontal */
+}
+
+/* Estilos para tabletas en posición vertical */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    /* Estilos para tabletas en posición vertical */
+}
+
+/* Estilos para tabletas en posición horizontal */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Estilos para tabletas en posición horizontal */
+}
+
+/* Estilos para pantallas medianas (por ejemplo, portátiles) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos para pantallas medianas (portátiles) */
+}
+
+/* Estilos para pantallas grandes (monitores de escritorio) */
+@media (min-width: 1441px) {
+    /* Estilos para pantallas grandes (monitores de escritorio) */
+}
+
+/* Estilos en modo oscuro */
+@media (prefers-color-scheme: dark) {
+    /* Estilos específicos para el modo oscuro del sistema */
+}
+
+/* Estilos para la impresión */
+@media print {
+    /* Estilos específicos para la impresión */
+}

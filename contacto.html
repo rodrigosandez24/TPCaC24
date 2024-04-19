@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestoría del Automotor Othala | Contacto</title>
+    <link rel="shortcut icon" href="./img/logo-ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css"> <!--1° Elimino configuraciones por defecto-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="cont-logo">
+            <a href="./index.html">
+                <div>
+                    <img id="logo01" src="./img/logo othala-verde01.png" width="200" alt="Logo Gestoría Othala">
+                </div>
+                <img src="./img/logo othala-verde02.png" width="200" alt="Logo Gestoría Othala">
+            </a>
+        </div>
+        <!--<h1>Gestoría del Automotor Othala</h1>-->
+        <nav class="cont-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <script src="./js/form.js"></script>
+        <section class="principal">
+            <h1 class="titulo-principal"> Consultas </h1>
+        </section>
+
+        <form action="https://formsubmit.co/4a70ba02e026900d09a89f530e13c32a" method="POST">
+            <!--agrego dnd quiero enviarlo-->
+
+            <fieldset>
+                <div> <img id="logo-asesoramiento" src="./img/asesoramiento1.png" alt="Logo Gestoría Othala">
+
+
+                    <p>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.b</p>
+                </div>
+
+                <label class="form-tags" for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="nombre" class="input-form" required
+                    placeholder="Nombre y Apellido">
+
+                <label class="form-tags" for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" class="input-form" required placeholder="email@dominio.com">
+
+                <label class="form-tags" for="tel">Teléfono</label>
+                <input type="tel" id="tel" name="tel" class="input-form" required placeholder="11 1234 5678">
+
+                <p><b>¿Es la primera vez que nos contacta?</b></p>
+                <div class="check">
+                    <label class="form-tags" for="es-cliente">Si</label>
+                    <input type="radio" name="form-tags">
+                    <label class="form-tags" for="es-cliente">No</label>
+                    <input type="radio" name="form-tags">
+                </div>
+
+                <div class="tipo-vehiculo">
+                    <label for="sel-tipo">¿Que tipo de vehiculo posee?:     </label>
+                    <select name="sel-tipo" id="sel-tipo">
+                        <option value="sel-tipo">Seleccione el tipo de vehiculo</option>
+                        <option value="Moto">Moto</option>
+                        <option value="Auto">Auto</option>
+                        <option value="Camioneta">Camioneta</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Camion">Camion</option>
+                        <option value="Colectivo">Colectivo</option>
+                    </select>
+                    
+                    
+
+                </div>
+
+                <label class="form-tags" for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" name="mensaje" class="input-form" required
+                    placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
+                <input type="submit" value="Enviar formulario" class="enviar">
+                <input type="reset" value="Borrar formulario" class="enviar">
+
+
+            </fieldset>
+
+
+            <input type="hidden" name="_next" value="https://lauruizdias.github.io/tp-cac-othala/mail-enviado.html">
+            <!--confirma envío-->
+            <input type="hidden" name="_autoresponse"
+                value="Hola! Hemos recibido tu mensaje, pronto te estaremos contactando.">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="cont-redes">
+            <div><a href="https://api.whatsapp.com/send?phone=541134145324&text=" target="_blank">
+                    <img src="./img/whatsapp 128-1.png" width="30" alt="whatsapp">
+                </a></div>
+
+            <div><a href="https://www.instagram.com/gestoriadelautomotorothala/" target="_blank">
+                    <img src="./img/instagram 128-1.png" width="30" alt="instagram">
+                </a></div>
+
+            <div><a href="https://www.facebook.com/gestoriadelautomotorothala" target="_blank">
+                    <img src="./img/facebook 128-1.png" width="30" alt="facebook">
+                </a></div>
+
+            <div><a href="mailto: gestoriadelautomotor.info@gmail.com" target="_blank">
+                    <img src="./img/correo-electronico 128-1.png" width="30" alt="e-mail">
+                </a></div>
+        </div>
+        <p class="copyright">&copy Copyright Grupo Othala - 2023</p>
+    </footer>
+</body>
+
+</html>
