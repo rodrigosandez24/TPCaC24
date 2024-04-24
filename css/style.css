@@ -212,10 +212,10 @@ form legend {
 }
 
 .enviar {
-    display: flex;
+    /* display: flex; */
     width: 40%;
-    padding: 15px 0;
-    font-size: 18px;
+    padding: 0.3em 0.1em;
+    font-size: 1em;
     font-weight: bold;
     color: #FFFFFF;
     background: #155F4E;
