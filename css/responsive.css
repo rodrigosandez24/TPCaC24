@@ -1,0 +1,131 @@
+/* para celulares pequeños*/
+
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 2em;
+        padding: 0.3em;
+    }
+
+    main {
+        padding: 1vw;
+    }
+
+    footer {
+        font-size: 1vw;
+        padding: 2vw;
+    }
+
+    .principal{
+        font-size: 0.9em; /* Reducir el tamaño de fuente para pantallas pequeñas */
+        padding: 1vw; /* Añadir un poco de espacio alrededor del párrafo */
+    }
+
+    #logo-asesoramiento {
+        width: 120px;
+        height: 70px;
+        margin: 0 25%;
+        border-radius: 10px;
+}
+
+#logo01{
+    width: 100px;
+}
+#logo02{
+    width: 100px;
+}
+
+}
+
+
+
+/* para celulares medianos*/
+@media screen and (min-width:481px) and (max-width:767px) {
+    header {
+        font-size: 2em;
+        padding: 0.3em;
+    }
+
+    main {
+        padding: 1vw;
+    }
+
+    footer {
+        font-size: 1vw;
+        padding: 2vw;
+    }
+
+    .principal{
+        font-size: 0.9em; 
+        padding: 1vw; 
+    }
+
+    #logo-asesoramiento {
+        width: 130px;
+        height: 80px;
+        margin: 0 25%;
+        border-radius: 10px;
+}
+
+#logo01{
+    width: 150px;
+}
+#logo02{
+    width: 150px;
+}
+
+}
+
+
+  
+
+  /* para tablets */
+  @media screen and (min-width:768px) and (max-width:1023px) {
+    header {
+        font-size: 1em;
+        padding: 0.3em;
+    }
+
+    main {
+        padding: 1vw;
+    }
+
+    footer {
+        font-size: 2vw;
+        padding: 3vw;
+    }
+
+    .principal{
+        font-size: 1em; 
+        padding: 2.5vw; 
+    }
+
+    #logo-asesoramiento {
+        width: 170px;
+        height: 110px;
+        margin: 0 25%;
+        border-radius: 10px;
+} 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+

@@ -24,5 +24,12 @@ function validarFormulario() {
     
     // Si la validación pasa, enviar el formulario
     return true;
+
+
+    
 }
+
+
+
+
 

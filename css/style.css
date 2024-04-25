@@ -243,10 +243,17 @@ form legend {
 }
 
 #logo-asesoramiento {
-    width: 8vw;
-    height: 5vw;
+    width: 180px;
+    height: 125px;
     margin: 0 38%;
     border-radius: 10px;
+}
+
+#sel-tipo{
+    width: 200px; /* Ancho deseado del select */
+  height: 40px; /* Altura deseada del select */
+  padding: 5px; /* Espacio interno para el texto */
+  font-size: 12px; 
 }
 
 .banner {
@@ -254,7 +261,7 @@ form legend {
 }
 
 .principal {
-    width: 940px;
+    width: 65%;
     padding: 1.5em 0;
     margin: 0 auto;
     display: flex;
@@ -269,6 +276,9 @@ form legend {
 }
 
 .principal p {
+    /* display:flex;
+    justify-content: center; 
+    width: 70vw;    */
     margin: 0 0 auto;
    /* font-size: 100%; */
    font-size: 1em; /* Tamaño de fuente relativo */
@@ -371,59 +381,25 @@ form legend {
     /* Transición suave al cambiar de posición */
 }
 
-/* Estilos para pantallas pequeñas (móviles vertical) */
-@media (max-width: 480px) {
-    header {
-        font-size: 24px;
-        padding: 10px;
-    }
 
-    main {
-        padding: 10px;
-    }
 
-    footer {
-        font-size: 14px;
-        padding: 5px;
-    }
 
-    .principal{
-        font-size: 0.9em; /* Reducir el tamaño de fuente para pantallas pequeñas */
-        padding: 10px; /* Añadir un poco de espacio alrededor del párrafo */
-    }
-}
 
-/* Estilos para pantallas pequeñas (móviles horizontal) */
-@media (max-width: 768px) and (orientation: landscape) {
-    /* Estilos para pantallas pequeñas en posición horizontal */
-}
 
-/* Estilos para tabletas en posición vertical */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    /* Estilos para tabletas en posición vertical */
-}
 
-/* Estilos para tabletas en posición horizontal */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* Estilos para tabletas en posición horizontal */
-}
 
-/* Estilos para pantallas medianas (por ejemplo, portátiles) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    /* Estilos para pantallas medianas (portátiles) */
-}
 
-/* Estilos para pantallas grandes (monitores de escritorio) */
-@media (min-width: 1441px) {
-    /* Estilos para pantallas grandes (monitores de escritorio) */
-}
 
-/* Estilos en modo oscuro */
-@media (prefers-color-scheme: dark) {
-    /* Estilos específicos para el modo oscuro del sistema */
-}
 
-/* Estilos para la impresión */
-@media print {
-    /* Estilos específicos para la impresión */
-}
+
+
+
+
+
+
+
+
+
+
+
+

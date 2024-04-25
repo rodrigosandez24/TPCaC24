@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./img/logo-ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css"> <!--1° Elimino configuraciones por defecto-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +23,7 @@
                 <div>
                     <img id="logo01" src="./img/logoothala-verde01.png" width="200" alt="Logo Gestoría Othala">
                 </div>
-                <img src="./img/logoothala-verde02.png" width="200" alt="Logo Gestoría Othala">
+                <img id="logo02" src="./img/logoothala-verde02.png" width="200" alt="Logo Gestoría Othala">
             </a>
         </div>
         <!--<h1>Gestoría del Automotor Othala</h1>-->
@@ -36,18 +37,19 @@
 
     <main>
         <script src="./js/form.js"></script>
-        <section class="principal">
-            <h1 class="titulo-principal"> Consultas </h1>
-        </section>
+        
 
         <form action="https://formsubmit.co/4a70ba02e026900d09a89f530e13c32a" method="POST">
             <!--agrego dnd quiero enviarlo-->
 
             <fieldset>
+                <section class="principal">
+                    <h1 class="titulo-principal"> Consultas </h1>
+                </section>
                 <div> <img id="logo-asesoramiento" src="./img/asesoramiento1.png" alt="Logo Gestoría Othala">
 
 
-                    <p>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.b</p>
+                    <p>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</p>
                 </div>
 
                 <label class="form-tags" for="nombre">Nombre y Apellido</label>
@@ -61,17 +63,17 @@
                 <input type="tel" id="tel" name="tel" class="input-form" required placeholder="11 1234 5678">
 
                 <p><b>¿Es la primera vez que nos contacta?</b></p>
-                <div class="check">
-                    <label class="form-tags" for="es-cliente">Si</label>
+                <div class="check" id="check">
+                    <label class="form-tags" for="es-cliente" id="si">Si</label>
                     <input type="radio" name="form-tags">
-                    <label class="form-tags" for="es-cliente">No</label>
+                    <label class="form-tags" for="es-cliente" id="no">No</label>
                     <input type="radio" name="form-tags">
                 </div>
 
                 <div class="tipo-vehiculo">
-                    <label for="sel-tipo">¿Que tipo de vehiculo posee?:     </label>
+                    <label for="sel-tipo"><b>¿Tipo de vehiculo?: </b></label>
                     <select name="sel-tipo" id="sel-tipo">
-                        <option value="sel-tipo">Seleccione el tipo de vehiculo</option>
+                        <option value="sel-tipo">Seleccione tipo de vehiculo</option>
                         <option value="Moto">Moto</option>
                         <option value="Auto">Auto</option>
                         <option value="Camioneta">Camioneta</option>
@@ -117,7 +119,7 @@
                     <img src="./img/facebook128-1.png" width="30" alt="facebook">
                 </a></div>
 
-            <div><a href="mailto:gestoriadelautomotor.info@gmail.com" target="_blank">
+            <div><a href="mailto: gestoriadelautomotor.info@gmail.com" target="_blank">
                     <img src="./img/correo-electronico128-1.png" width="30" alt="e-mail">
                 </a></div>
         </div>
