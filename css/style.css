@@ -318,7 +318,7 @@ form legend {
 
 .mapa iframe {
     display: flex;
-    /* width: 100%; */
+    width: 100%;
     /* Establece el ancho al 100%  */
     height: 300px;
     /* Altura fija, pero puedes ajustarla como necesites */
@@ -344,6 +344,7 @@ form legend {
     /* Elimina cualquier relleno */
     overflow: hidden;
     /* Asegura que no se desborde del contenedor */
+ 
 }
 
 /* Estilos para la imagen dentro de la sección de portada */
@@ -358,7 +359,7 @@ form legend {
 
 }
 
-.portada-img h1 {
+/* .portada-img h1 {
     font-size: 3vw;
     font-weight: bold;
     text-align: center;
@@ -369,7 +370,7 @@ form legend {
     left: 50%;
     transform: translate(-50%, -50%);
 
-}
+} */
 
 
 /* Estilos para cuando la barra de navegación se fije */
