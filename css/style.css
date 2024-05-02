@@ -169,6 +169,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin: 1vw 0;
+    
 }
 
 .cont-redes {
@@ -199,7 +200,7 @@ form {
 form label,
 form legend {
     display: flex;
-    font-size: 20px;
+    font-size: 1em;
     margin: 0 0 5px;
 }
 
@@ -208,7 +209,7 @@ form legend {
     align-items: center;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 100%;
+    width: 80%;
 }
 
 .enviar {
@@ -250,7 +251,7 @@ form legend {
 }
 
 #sel-tipo{
-    width: 50%; /* Ancho deseado del select */
+    width: 40%; /* Ancho deseado del select */
   height: 40px; /* Altura deseada del select */
   padding: 5px; /* Espacio interno para el texto */
   font-size: 0.8em; 
@@ -289,6 +290,18 @@ form legend {
 
 .principal em {
     font-style: italic;
+}
+
+label {
+    display: block;
+    font:
+        1rem 'Fira Sans',
+        sans-serif;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
 }
 
 
@@ -359,18 +372,7 @@ form legend {
 
 }
 
-/* .portada-img h1 {
-    font-size: 3vw;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-} */
 
 
 /* Estilos para cuando la barra de navegación se fije */
