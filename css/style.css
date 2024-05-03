@@ -341,7 +341,8 @@ label {
 .mapa a {
     display: flex;
     margin: 0 0 3em;
-    justify-content: center;
+    justify-content:center;
+    text-align: justify;
 }
 
 /* Estilos para la sección de la imagen de portada */
