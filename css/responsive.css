@@ -24,7 +24,7 @@
     #logo-asesoramiento {
         width: 120px;
         height: 70px;
-        margin: 0 25%;
+        margin: 0 auto;
         border-radius: 10px;
 }
 
@@ -107,7 +107,7 @@
     #logo-asesoramiento {
         width: 130px;
         height: 80px;
-        margin: 0 25%;
+        margin: 0 auto;
         border-radius: 10px;
 }
 
@@ -185,7 +185,7 @@
     #logo-asesoramiento {
         width: 180px;
         height: 110px;
-        margin: 0 25%;
+        margin: 0 auto;
         border-radius: 10px;
 } 
 

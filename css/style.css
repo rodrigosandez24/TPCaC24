@@ -207,9 +207,10 @@ form legend {
 .input-form {
     display: flex;
     align-items: center;
-    margin: 0 0 20px;
+    margin: 0 auto 20px;
     padding: 10px 25px;
-    width: 90%;
+    width: 85%;
+    border-radius: 5px;
 }
 
 .enviar {
@@ -244,14 +245,16 @@ form legend {
 }
 
 #logo-asesoramiento {
+    display: flex;
     width: 180px;
     height: 125px;
-    margin: 0 38%;
+    margin: 0 auto;
     border-radius: 10px;
+    justify-content: center;
 }
 
 #sel-tipo{
-    width: 53%; /* Ancho deseado del select */
+    width: 45%; /* Ancho deseado del select */
   height: 40px; /* Altura deseada del select */
   padding: 5px; /* Espacio interno para el texto */
   font-size: 0.8em; 
