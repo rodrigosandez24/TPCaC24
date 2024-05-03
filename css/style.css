@@ -209,7 +209,7 @@ form legend {
     align-items: center;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 80%;
+    width: 90%;
 }
 
 .enviar {
@@ -251,7 +251,7 @@ form legend {
 }
 
 #sel-tipo{
-    width: 40%; /* Ancho deseado del select */
+    width: 53%; /* Ancho deseado del select */
   height: 40px; /* Altura deseada del select */
   padding: 5px; /* Espacio interno para el texto */
   font-size: 0.8em; 
@@ -263,7 +263,7 @@ form legend {
 
 .principal {
     width: 65%;
-    padding: 4em 0 1.5em;
+    padding: 1em 0 1.5em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -277,9 +277,9 @@ form legend {
 }
 
 .principal p {
-    /* display:flex;
+    display:flex;
     justify-content: center; 
-    width: 70vw;    */
+    width: 100%;   
     margin: 0 0 auto;
    /* font-size: 100%; */
    font-size: 1em; /* Tamaño de fuente relativo */
@@ -306,13 +306,6 @@ label {
     margin: 0.4rem 0;
 }
 
-
-.mapa {
-    display: flex;
-    width: 940px;
-    padding: 3em 0;
-}
-
 /* Asegurarse de que el contenedor principal no tiene margen ni relleno que afecte */
 .main,
 .mapa {
@@ -321,13 +314,13 @@ label {
     /* Establece el ancho al 100% */
     margin: 0;
     /* Elimina cualquier margen */
-    padding: 0;
+    padding: 1em;
     /* Elimina cualquier relleno */
     box-sizing: border-box;
     /* Asegura que el padding y el border estén incluidos en el ancho total */
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
 }
 
 
@@ -342,15 +335,15 @@ label {
     justify-items: center;
 }
 
-.mapa p {
+.mapa a {
     display: flex;
-    margin: 0 0 2em;
-    text-align: center;
+    margin: 0 0 3em;
+    justify-content: center;
 }
 
 /* Estilos para la sección de la imagen de portada */
 .portada-img {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     /* Establece el ancho al 100% */
     margin: 0;
