@@ -37,7 +37,7 @@
 
     <main>
         <script src="./js/form.js"></script>
-        
+
 
         <form action="https://formsubmit.co/rodrigosandez24@gmail.com" method="POST">
             <!--agrego dnd quiero enviarlo-->
@@ -45,12 +45,12 @@
             <fieldset>
                 <section class="principal">
                     <h1 class="titulo-principal"> Consultas </h1>
-                </section>
-                <div> 
-                    <img id="logo-asesoramiento" src="./img/asesoramiento1.png" alt="Logo Gestoría Othala">
+                
+                
+                    <!-- <img id="logo-asesoramiento" src="./img/asesoramiento1.png" alt="Logo Gestoría Othala"> -->
 
                     <p>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</p>
-                </div>
+                </section>
 
                 <label class="form-tags" for="nombre">Nombre y Apellido</label>
                 <input type="text" id="nombre" name="nombre" class="input-form" required
@@ -70,6 +70,20 @@
                     <input type="radio" name="form-tags">
                 </div>
 
+                <p><b>Su mensaje es: </b></p>
+                <div class="check" id="check">
+                    <label class="form-tags" for="es-consulta" id="si">Consulta</label>
+                    <input type="radio" name="form-tags">
+                    <label class="form-tags" for="es-reclamo" id="no">Reclamo</label>
+                    <input type="radio" name="form-tags">
+                </div>
+
+                <div class="avatar" >
+                    <label for="avatar">Si es Reclamo, envie el comprobante</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+
+                </div>
+
                 <div class="tipo-contacto">
                     <label for="sel-tipo"><b>¿Como desea que nos contactemos?: </b></label>
                     <select name="sel-tipo" id="sel-tipo">
@@ -77,10 +91,8 @@
                         <option value="Telefono">Telefono</option>
                         <option value="E-mail">E-mail</option>
                         <option value="Whatsapp">Whatsapp</option>
-                       
+
                     </select>
-                    
-                    
 
                 </div>
 
@@ -88,12 +100,10 @@
                 <textarea cols="70" rows="5" id="mensaje" name="mensaje" class="input-form" required
                     placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
 
-                    <label for="avatar">¿Desea enviarnos una imagen?</label>
-                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
-<div>
-                <input type="submit" value="Enviar " class="enviar">
-                <input type="reset" value="Borrar " class="enviar">
-            </div>
+                <div>
+                    <input type="submit" value="Enviar " class="enviar">
+                    <input type="reset" value="Borrar " class="enviar">
+                </div>
 
             </fieldset>
 
