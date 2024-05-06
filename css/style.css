@@ -336,9 +336,6 @@ label {
     flex-wrap: wrap;
     /* align-items: center; */
 }
-.main{
-    flex: 1;
-} 
 
 .mapa iframe {
     display: flex;
