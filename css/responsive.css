@@ -24,6 +24,14 @@
         width: 100%;
         /*Para que el ancho del footer sea siempre el ancho del viewport */
     }
+    .footer-services {
+        position:static;
+        /*Para colocar la posicion del footer esatico */
+        bottom: 0;
+        /*Para colocar la posicion del footer siempre debajo */
+        width: 100%;
+        /*Para que el ancho del footer sea siempre el ancho del viewport */
+    }
 
     .principal {
         font-size: 0.9em;
@@ -66,7 +74,7 @@
         flex-direction: column;
         justify-content: center;
         column-gap: 10em;
-        margin-bottom: 5em; /*eliminar espacio a ultimo elementio*/
+        margin-bottom: 2em; /*eliminar espacio a ultimo elementio*/
     }
 
     .servicios {
@@ -118,6 +126,14 @@
         width: 100%;
         /*Para que el ancho del footer sea siempre el ancho del viewport */
     }
+    .footer-services {
+        position:static;
+        /*Para colocar la posicion del footer esatico */
+        bottom: 0;
+        /*Para colocar la posicion del footer siempre debajo */
+        width: 100%;
+        /*Para que el ancho del footer sea siempre el ancho del viewport */
+    }
 
     .principal {
         font-size: 0.9em;
@@ -158,7 +174,7 @@
         flex-direction: column;
         justify-content: center;
         column-gap: 10em;
-        margin-bottom: 5em;
+        margin-bottom: 2em;
     }
 
     .servicios {
@@ -193,6 +209,14 @@
         .principal {
         font-size: 1em;
         padding: 2.5vw;
+    }
+    .footer-services {
+        position:static;
+        /*Para colocar la posicion del footer esatico */
+        bottom: 0;
+        /*Para colocar la posicion del footer siempre debajo */
+        width: 100%;
+        /*Para que el ancho del footer sea siempre el ancho del viewport */
     }
 
     #logo-asesoramiento {
