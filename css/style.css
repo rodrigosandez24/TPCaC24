@@ -4,6 +4,7 @@ body {
     background: linear-gradient(#FFFFFF, #EBE3C8, #cccccc);
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
 }
 
 /* Estilos para el contenedor del logo y la barra de navegación */
@@ -32,7 +33,7 @@ header {
     }
 }
 
-.avatar{
+.avatar {
     margin: 0.5em 0;
 }
 
@@ -178,7 +179,16 @@ footer {
     text-align: center;
     padding: 20px;
     margin: 1vw 0;
-    
+
+}
+
+.footer-services {
+    position: fixed;
+    /*Para colocar la posicion del footer fijo */
+    bottom: 0;
+    /*Para colocar la posicion del footer siempre debajo */
+    width: 100%;
+    /*Para que el ancho del footer sea siempre el ancho del viewport */
 }
 
 .cont-redes {
@@ -221,6 +231,7 @@ form legend {
     width: 85%;
     border-radius: 5px;
 }
+
 .enviar {
     /* display: flex; */
     width: 40%;
@@ -242,14 +253,14 @@ form legend {
     transform: scale(1.1);
 }
 
-.check{
+.check {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-   gap: 1em;
+    gap: 1em;
 }
 
-.tipo-contacto{
+.tipo-contacto {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -264,11 +275,14 @@ form legend {
     justify-content: center;
 }
 
-#sel-tipo{
-    width: 45%; /* Ancho deseado del select */
-  height: 40px; /* Altura deseada del select */
-  padding: 5px; /* Espacio interno para el texto */
-  font-size: 0.8em; 
+#sel-tipo {
+    width: 45%;
+    /* Ancho deseado del select */
+    height: 40px;
+    /* Altura deseada del select */
+    padding: 5px;
+    /* Espacio interno para el texto */
+    font-size: 0.8em;
 }
 
 .banner {
@@ -291,16 +305,18 @@ form legend {
 }
 
 .principal p {
-    display:flex;
-    justify-content: center; 
-    width: 100%;   
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin: 0 0 auto;
-   font-size: 1em; /* Tamaño de fuente relativo */
-  line-height: 1.5; /* Altura de línea relativa */
-  
+    font-size: 1em;
+    /* Tamaño de fuente relativo */
+    line-height: 1.5;
+    /* Altura de línea relativa */
+
 }
 
-.principal-mail p{
+.principal-mail p {
     text-align: center;
 }
 
@@ -337,6 +353,11 @@ label {
     /* align-items: center; */
 }
 
+.main {
+    flex: 1;
+
+}
+
 .mapa iframe {
     display: flex;
     width: 100%;
@@ -351,7 +372,7 @@ label {
 .mapa a {
     display: flex;
     margin: 0 0 3em;
-    justify-content:center;
+    justify-content: center;
     text-align: justify;
 }
 
@@ -366,7 +387,7 @@ label {
     /* Elimina cualquier relleno */
     overflow: hidden;
     /* Asegura que no se desborde del contenedor */
- 
+
 }
 
 /* Estilos para la imagen dentro de la sección de portada */
@@ -393,26 +414,3 @@ label {
     transition: all 0.3s;
     /* Transición suave al cambiar de posición */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

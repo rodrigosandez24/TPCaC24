@@ -37,18 +37,11 @@
 
     <main>
         <script src="./js/form.js"></script>
-
-
         <form action="https://formsubmit.co/rodrigosandez24@gmail.com" method="POST">
             <!--agrego dnd quiero enviarlo-->
-
             <fieldset>
                 <section class="principal">
                     <h1 class="titulo-principal"> Consultas </h1>
-                
-                
-                    <!-- <img id="logo-asesoramiento" src="./img/asesoramiento1.png" alt="Logo Gestoría Othala"> -->
-
                     <p>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</p>
                 </section>
 
@@ -62,7 +55,6 @@
                 <label class="form-tags" for="tel">Teléfono</label>
                 <input type="tel" id="tel" name="tel" class="input-form" required placeholder="11 1234 5678">
 
-                
                 <div class="check" id="check">
                     <p><b>¿Es la primera vez que nos contacta?</b></p>
                     <label class="form-tags" for="es-cliente" id="si">Si</label>
@@ -71,7 +63,6 @@
                     <input type="radio" name="form-tags">
                 </div>
 
-                
                 <div class="check" id="check">
                     <p><b>Su mensaje es: </b></p>
                     <label class="form-tags" for="es-consulta" id="consulta">Consulta</label>
@@ -80,10 +71,9 @@
                     <input type="radio" name="form-tags-consulta">
                 </div>
 
-                <div class="avatar" >
+                <div class="avatar">
                     <label for="avatar">Si es reclamo, envie el comprobante</label>
                     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
-
                 </div>
 
                 <div class="tipo-contacto">
@@ -97,18 +87,15 @@
                     </select>
 
                 </div>
-
                 <label class="form-tags" for="mensaje">Mensaje</label>
                 <textarea cols="70" rows="5" id="mensaje" name="mensaje" class="input-form" required
                     placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
-
                 <div>
                     <input type="submit" value="Enviar " class="enviar">
                     <input type="reset" value="Borrar " class="enviar">
                 </div>
 
             </fieldset>
-
 
             <input type="hidden" name="_next" value="https://rodrigosandez24.github.io/TPCaC24/mail-enviado.html">
             <!--confirma envío-->

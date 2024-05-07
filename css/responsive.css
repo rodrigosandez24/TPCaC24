@@ -16,9 +16,20 @@
         padding: 2vw;
     }
 
-    .principal{
-        font-size: 0.9em; /* Reducir el tamaño de fuente para pantallas pequeñas */
-        padding: 1vw; /* Añadir un poco de espacio alrededor del párrafo */
+    #footer-index {
+        position: fixed;
+        /*Para colocar la posicion del footer fijo */
+        bottom: 0;
+        /*Para colocar la posicion del footer siempre debajo */
+        width: 100%;
+        /*Para que el ancho del footer sea siempre el ancho del viewport */
+    }
+
+    .principal {
+        font-size: 0.9em;
+        /* Reducir el tamaño de fuente para pantallas pequeñas */
+        padding: 1vw;
+        /* Añadir un poco de espacio alrededor del párrafo */
     }
 
     #logo-asesoramiento {
@@ -26,63 +37,54 @@
         height: 70px;
         margin: 0 auto;
         border-radius: 10px;
+    }
+
+    #logo01 {
+        width: 80px;
+    }
+
+    #logo02 {
+        width: 80px;
+    }
+
+    .portada-img h1 {
+        font-size: 3vw;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .cont-serv {
+        display: flex;
+        flex-flow: Wrap;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 10em;
+        margin-bottom: 25em;
+    }
+
+    .servicios {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        column-gap: 10px;
+        text-align: center;
+        width: 100%;
+        vertical-align: top;
+        background: #155f4e07;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 4px solid #155F4E;
+        border-radius: 12px;
+    }
 }
-
-#logo01{
-    width: 80px;
-}
-#logo02{
-    width: 80px;
-}
-
-
-.portada-img h1 {
-    font-size: 3vw;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
- .cont-serv {
-    display: flex;
-    flex-flow: Wrap;
-    flex-direction: column;
-    justify-content: center;
-    column-gap: 10em;
-    margin-bottom: 25em; 
-}
-
-.servicios {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    column-gap: 10px;
-    text-align: center;
-    width: 100%;
-    vertical-align: top;
-    background: #155f4e07;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 4px solid #155F4E;
-    border-radius: 12px;
-
-/* .servicios h1{
-    font-size: 2em;
-} */
-
-}
-
-}
-
-
-
 
 /* para celulares medianos*/
 @media screen and (min-width:481px) and (max-width:767px) {
@@ -100,9 +102,18 @@
         padding: 2vw;
     }
 
-    .principal{
-        font-size: 0.9em; 
-        padding: 1vw; 
+    #footer-index {
+        position: fixed;
+        /*Para colocar la posicion del footer fijo */
+        bottom: 0;
+        /*Para colocar la posicion del footer siempre debajo */
+        width: 100%;
+        /*Para que el ancho del footer sea siempre el ancho del viewport */
+    }
+
+    .principal {
+        font-size: 0.9em;
+        padding: 1vw;
     }
 
     #logo-asesoramiento {
@@ -110,60 +121,58 @@
         height: 80px;
         margin: 0 auto;
         border-radius: 10px;
+    }
+
+    #logo01 {
+        width: 120px;
+    }
+
+    #logo02 {
+        width: 120px;
+    }
+
+    .portada-img h1 {
+        font-size: 3vw;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .cont-serv {
+        display: flex;
+        flex-flow: Wrap;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 10em;
+        margin-bottom: 25em;
+    }
+
+    .servicios {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        column-gap: 10px;
+        text-align: center;
+        width: 100%;
+        vertical-align: top;
+        background: #155f4e07;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 4px solid #155F4E;
+        border-radius: 12px;
+    }
+
 }
 
-#logo01{
-    width: 120px;
-}
-#logo02{
-    width: 120px;
-}
-
-.portada-img h1 {
-    font-size: 3vw;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-
-.cont-serv {
-    display: flex;
-    flex-flow: Wrap;
-    flex-direction: column;
-    justify-content: center;
-    column-gap: 10em;
-    margin-bottom: 25em; 
-}
-
-.servicios {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    column-gap: 10px;
-    text-align: center;
-    width: 100%;
-    vertical-align: top;
-    background: #155f4e07;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 4px solid #155F4E;
-    border-radius: 12px;
-
-}
-
-}
-  
-
-  /* para tablets */
-  @media screen and (min-width:768px) and (max-width:1024px) {
+/* para tablets */
+@media screen and (min-width:768px) and (max-width:1024px) {
     header {
         font-size: 1em;
         padding: 0.3em;
@@ -178,9 +187,18 @@
         padding: 3vw;
     }
 
-    .principal{
-        font-size: 1em; 
-        padding: 2.5vw; 
+    #footer-index {
+        position: fixed;
+        /*Para colocar la posicion del footer fijo */
+        bottom: 0;
+        /*Para colocar la posicion del footer siempre debajo */
+        width: 100%;
+        /*Para que el ancho del footer sea siempre el ancho del viewport */
+    }
+
+    .principal {
+        font-size: 1em;
+        padding: 2.5vw;
     }
 
     #logo-asesoramiento {
@@ -188,28 +206,30 @@
         height: 110px;
         margin: 0 auto;
         border-radius: 10px;
-} 
+    }
 
-#logo01{
-    width: 180px;
+    #logo01 {
+        width: 180px;
+    }
+
+    #logo02 {
+        width: 180px;
+    }
+
+    .portada-img h1 {
+        font-size: 3vw;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 290px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
 }
-#logo02{
-    width: 180px;
-  }
-  .portada-img h1 {
-    font-size: 3vw;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 290px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-  }
 
 
 
@@ -227,5 +247,3 @@
 
 
 /* ------------------------------------------------------------------------------------------------------------------- */
-
-
