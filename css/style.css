@@ -60,7 +60,7 @@ header {
     /* Alinea los elementos verticalmente en el centro */
     width: 100%;
     /* Asegura que la barra de navegación ocupe todo el ancho */
-    padding: 0 10px;
+    padding: 0 1em;
     /* Añade un poco de relleno a los lados si es necesario */
     box-sizing: border-box;
     /* Incluye el padding en el cálculo del ancho */
