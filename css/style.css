@@ -37,6 +37,16 @@ header {
     margin: 0.5em 0;
 }
 
+#logo02 {
+    height: auto;
+    transition: transform 0.5s, box-shadow 0.5s;
+    border-radius: 5px;
+}
+
+#logo02:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Añade una sombra blanca */}
+
 /* Estilos para el contenedor de la barra de navegación */
 .cont-nav {
     display: flex;
@@ -414,3 +424,4 @@ label {
     transition: all 0.3s;
     /* Transición suave al cambiar de posición */
 }
+
