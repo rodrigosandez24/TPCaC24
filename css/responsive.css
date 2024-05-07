@@ -190,21 +190,7 @@
         padding: 1vw;
     }
 
-    footer {
-        font-size: 2vw;
-        padding: 3vw;
-    }
-
-    #footer-index {
-        position: fixed;
-        /*Para colocar la posicion del footer fijo */
-        bottom: 0;
-        /*Para colocar la posicion del footer siempre debajo */
-        width: 100%;
-        /*Para que el ancho del footer sea siempre el ancho del viewport */
-    }
-
-    .principal {
+        .principal {
         font-size: 1em;
         padding: 2.5vw;
     }
