@@ -35,6 +35,8 @@ header {
 
 .avatar {
     margin: 0.5em 0;
+    font-style: italic;
+    font-size: small;
 }
 
 #logo02 {
@@ -268,6 +270,7 @@ form legend {
     flex-direction: row;
     align-items: baseline;
     gap: 0.2em;
+    margin: 0.5em;
 }
 
 .tipo-contacto {
@@ -312,17 +315,20 @@ form legend {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
+    margin: 0.5em
 }
 
 .principal p {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0 0 auto;
+    margin: 0.5em 0 2em auto;
     font-size: 1em;
     /* Tamaño de fuente relativo */
     line-height: 1.5;
     /* Altura de línea relativa */
+    font-style: italic;
+    text-align: justify;
 
 }
 
