@@ -30,8 +30,8 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     // Validar el campo de teléfono
     if (tel === '') {
         mensajeError += 'El campo de Teléfono no puede estar vacío.\n';
-    } else if (!/^\d{2} \d{4} \d{4}$/.test(tel)) {
-        mensajeError += 'El formato del Teléfono debe ser 11 1234 5678.\n';
+    } else if (!/^\d{3} \d{3} \d{6}$/.test(tel)) {
+        mensajeError += 'El formato del Teléfono debe ser 011 154 123456.\n';
     }
 
     // Validar la selección de tipo de contacto
