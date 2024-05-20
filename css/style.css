@@ -1,3 +1,13 @@
+.avatar {
+    margin: 0.5em 0;
+    font-style: italic;
+    font-size: small;
+}
+
+.banner {
+    width: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,47 +17,13 @@ body {
     min-height: 100vh;
 }
 
-/* Estilos para el contenedor del logo y la barra de navegación */
-header {
-    text-align: center;
-    background-color: #155F4E;
-}
-
-.cont-logo {
+.check {
     display: flex;
-    justify-content: center;
-    background-color: #155F4E;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.2em;
+    margin: 0.5em;
 }
-
-#logo01 {
-    animation: girar 15s infinite linear;
-}
-
-@keyframes girar {
-    from {
-        transform: scaleX(1);
-    }
-
-    to {
-        transform: scaleX(-1);
-    }
-}
-
-.avatar {
-    margin: 0.5em 0;
-    font-style: italic;
-    font-size: small;
-}
-
-#logo02 {
-    height: auto;
-    transition: transform 0.5s, box-shadow 0.5s;
-    border-radius: 5px;
-}
-
-#logo02:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Añade una sombra blanca */}
 
 /* Estilos para el contenedor de la barra de navegación */
 .cont-nav {
@@ -66,9 +42,6 @@ header {
     /* Añade un poco de relleno a los lados si es necesario */
     box-sizing: border-box;
     /* Incluye el padding en el cálculo del ancho */
-    /*position: fixed; /* Fija la barra de navegación en la parte superior */
-    /*top: 0; /* Alinea la barra de navegación en la parte superior de la pantalla */
-    /*z-index: 1000; /* Asegura que la barra de navegación se mantenga por encima de otros elementos */
 }
 
 /* Estilos para los enlaces dentro de la barra de navegación */
@@ -96,7 +69,6 @@ header {
     /* Bordes redondeados para los botones */
     transition: background-color 0.3s;
     /* Transición suave para el efecto de hover */
-
 }
 
 /* Estilos para el efecto hover en los enlaces/botones */
@@ -111,7 +83,6 @@ header {
     /* Transición suave para el efecto de sombra */
     box-shadow: 0 0 10px #FFFFFF;
     /* Sombra blanca alrededor del botón */
-    /*color: #FFFFFF; /* Opcional: Cambiar el color del texto si es necesario */
 }
 
 .cont-serv {
@@ -121,6 +92,227 @@ header {
     column-gap: 10px;
     margin-bottom: 25px;
 }
+
+.cont-logo {
+    display: flex;
+    justify-content: center;
+    background-color: #155F4E;
+}
+
+.cont-redes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 10px;
+    /* Agrandar los iconos y añadir sombra al pasar el mouse */
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.enviar {
+    /* display: flex; */
+    width: 40%;
+    padding: 0.3em 0.1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #155F4E;
+    border: none;
+    border-radius: 25px;
+    transition: 1s all;
+    cursor: pointer;
+    justify-content: center;
+    margin: 1%;
+}
+
+.enviar:hover {
+    background: #155F4E;
+    transform: scale(1.1);
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s;
+    /* Transición suave al cambiar de posición */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #155F4E;
+    text-align: center;
+    padding: 20px;
+    margin: 1vw 0;
+}
+
+.footer-services {
+    position: fixed;
+    /*Para colocar la posicion del footer fijo */
+    bottom: 0;
+    /*Para colocar la posicion del footer siempre debajo */
+    width: 100%;
+    /*Para que el ancho del footer sea siempre el ancho del viewport */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label,
+form legend {
+    display: flex;
+    font-size: 1em;
+    margin: 0 0 5px;
+}
+
+
+/* Estilos para el contenedor del logo y la barra de navegación */
+header {
+    text-align: center;
+    background-color: #155F4E;
+}
+
+.input-form {
+    display: flex;
+    align-items: center;
+    margin: 0 0.2em 20px;
+    padding: 10px 25px;
+    width: 85%;
+    border-radius: 5px;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+}
+
+label {
+    display: block;
+    /* font:
+        1rem 'Fira Sans',
+        sans-serif; */
+}
+
+
+#logo01 {
+    animation: girar 15s infinite linear;
+}
+
+#logo02 {
+    height: auto;
+    transition: transform 0.5s, box-shadow 0.5s;
+    border-radius: 5px;
+}
+
+#logo02:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño de la imagen */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    /* Añade una sombra blanca */
+}
+
+.main {
+    flex: 1;
+}
+
+.mapa iframe {
+    display: flex;
+    width: 100%;
+    /* Establece el ancho al 100%  */
+    height: 300px;
+    /* Altura fija, pero puedes ajustarla como necesites */
+    border: none;
+    /* Elimina el borde del iframe */
+    justify-items: center;
+}
+
+.mapa a {
+    display: flex;
+    margin: 0 0 3em;
+    justify-content: center;
+    text-align: justify;
+}
+
+.main,
+.mapa {
+    display: flex;
+    width: 100%;
+    /* Establece el ancho al 100% */
+    margin: 0;
+    /* Elimina cualquier margen */
+    padding: 1em;
+    /* Elimina cualquier relleno */
+    box-sizing: border-box;
+    /* Asegura que el padding y el border estén incluidos en el ancho total */
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.principal p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5em 0 2em auto;
+    font-size: 1em;
+    /* Tamaño de fuente relativo */
+    line-height: 1.5;
+    /* Altura de línea relativa */
+    font-style: italic;
+    text-align: justify;
+}
+
+.principal-mail p {
+    text-align: center;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+/* Estilos para la sección de la imagen de portada */
+.portada-img {
+    /* display: flex; */
+    width: 100%;
+    /* Establece el ancho al 100% */
+    margin: 0;
+    /* Elimina cualquier margen */
+    padding: 0;
+    /* Elimina cualquier relleno */
+    overflow: hidden;
+    /* Asegura que no se desborde del contenedor */
+}
+
+/* Estilos para la imagen dentro de la sección de portada */
+.portada-img img {
+    display: flex;
+    width: 100%;
+    /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.principal {
+    width: 65%;
+    padding: 1em 0 1.5em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 
 .servicios {
     display: flex;
@@ -183,111 +375,6 @@ header {
     text-align: center;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: #155F4E;
-    text-align: center;
-    padding: 20px;
-    margin: 1vw 0;
-
-}
-
-.footer-services {
-    position: fixed;
-    /*Para colocar la posicion del footer fijo */
-    bottom: 0;
-    /*Para colocar la posicion del footer siempre debajo */
-    width: 100%;
-    /*Para que el ancho del footer sea siempre el ancho del viewport */
-}
-
-.cont-redes {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    column-gap: 10px;
-    /* Agrandar los iconos y añadir sombra al pasar el mouse */
-    /*transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
-    /*transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave */
-    /*box-shadow: 0 0 10px #FFFFFF; /* Añade una sombra blanca */
-}
-
-.copyright {
-    color: #FFFFFF;
-    font-size: 15px;
-    margin-top: 10px;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin: 0 auto;
-}
-
-form label,
-form legend {
-    display: flex;
-    font-size: 1em;
-    margin: 0 0 5px;
-}
-
-.input-form {
-    display: flex;
-    align-items: center;
-    margin: 0 0.2em 20px;
-    padding: 10px 25px;
-    width: 85%;
-    border-radius: 5px;
-}
-
-.enviar {
-    /* display: flex; */
-    width: 40%;
-    padding: 0.3em 0.1em;
-    font-size: 1em;
-    font-weight: bold;
-    color: #FFFFFF;
-    background: #155F4E;
-    border: none;
-    border-radius: 25px;
-    transition: 1s all;
-    cursor: pointer;
-    justify-content: center;
-    margin: 1%;
-}
-
-.enviar:hover {
-    background: #155F4E;
-    transform: scale(1.1);
-}
-
-.check {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 0.2em;
-    margin: 0.5em;
-}
-
-.tipo-contacto {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#logo-asesoramiento {
-    display: flex;
-    width: 180px;
-    height: 125px;
-    margin: 0 auto;
-    border-radius: 10px;
-    justify-content: center;
-}
-
 #sel-tipo {
     width: 45%;
     /* Ancho deseado del select */
@@ -298,17 +385,10 @@ form legend {
     font-size: 0.8em;
 }
 
-.banner {
-    width: 100%;
-}
-
-.principal {
-    width: 65%;
-    padding: 1em 0 1.5em;
-    margin: 0 auto;
+.tipo-contacto {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .titulo-principal {
@@ -318,116 +398,12 @@ form legend {
     margin: 0.5em
 }
 
-.principal p {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0.5em 0 2em auto;
-    font-size: 1em;
-    /* Tamaño de fuente relativo */
-    line-height: 1.5;
-    /* Altura de línea relativa */
-    font-style: italic;
-    text-align: justify;
+@keyframes girar {
+    from {
+        transform: scaleX(1);
+    }
 
+    to {
+        transform: scaleX(-1);
+    }
 }
-
-.principal-mail p {
-    text-align: center;
-}
-
-.principal em {
-    font-style: italic;
-}
-
-label {
-    display: block;
-    /* font:
-        1rem 'Fira Sans',
-        sans-serif; */
-}
-
-input,
-label {
-    margin: 0.4rem 0;
-}
-
-/* Asegurarse de que el contenedor principal no tiene margen ni relleno que afecte */
-.main,
-.mapa {
-    display: flex;
-    width: 100%;
-    /* Establece el ancho al 100% */
-    margin: 0;
-    /* Elimina cualquier margen */
-    padding: 1em;
-    /* Elimina cualquier relleno */
-    box-sizing: border-box;
-    /* Asegura que el padding y el border estén incluidos en el ancho total */
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* align-items: center; */
-}
-
-.main {
-    flex: 1;
-
-}
-
-.mapa iframe {
-    display: flex;
-    width: 100%;
-    /* Establece el ancho al 100%  */
-    height: 300px;
-    /* Altura fija, pero puedes ajustarla como necesites */
-    border: none;
-    /* Elimina el borde del iframe */
-    justify-items: center;
-}
-
-.mapa a {
-    display: flex;
-    margin: 0 0 3em;
-    justify-content: center;
-    text-align: justify;
-}
-
-/* Estilos para la sección de la imagen de portada */
-.portada-img {
-    /* display: flex; */
-    width: 100%;
-    /* Establece el ancho al 100% */
-    margin: 0;
-    /* Elimina cualquier margen */
-    padding: 0;
-    /* Elimina cualquier relleno */
-    overflow: hidden;
-    /* Asegura que no se desborde del contenedor */
-
-}
-
-/* Estilos para la imagen dentro de la sección de portada */
-.portada-img img {
-    display: flex;
-    width: 100%;
-    /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-
-
-
-}
-
-
-
-
-/* Estilos para cuando la barra de navegación se fije */
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all 0.3s;
-    /* Transición suave al cambiar de posición */
-}
-
