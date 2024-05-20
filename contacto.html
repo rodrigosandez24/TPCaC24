@@ -14,6 +14,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto+Condensed:wght@300&display=swap"
         rel="stylesheet">
+        <script src="./js/form.js"></script>
+
+   
 </head>
 
 <body>
@@ -33,10 +36,8 @@
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-
     <main>
-        <script src="./js/form.js"></script>
-        <form action="https://formsubmit.co/rodrigosandez24@gmail.com" method="POST">
+        <form id="formulario" action="https://formsubmit.co/rodrigosandez24@gmail.com" method="POST">
             <!--agrego dnd quiero enviarlo-->
             <fieldset>
                 <section class="principal">
@@ -45,29 +46,28 @@
                 </section>
 
                 <label class="form-tags" for="nombre">Nombre y Apellido</label>
-                <input type="text" id="nombre" name="nombre" class="input-form" required
-                    placeholder="Nombre y Apellido">
+                <input type="text" id="nombre" name="nombre" class="input-form" placeholder="Nombre y Apellido">
 
                 <label class="form-tags" for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" class="input-form" required placeholder="email@dominio.com">
+                <input type="email" id="email" name="email" class="input-form" placeholder="email@dominio.com">
 
                 <label class="form-tags" for="tel">Teléfono</label>
-                <input type="tel" id="tel" name="tel" class="input-form" required placeholder="11 1234 5678">
+                <input type="tel" id="tel" name="tel" class="input-form" placeholder="11 1234 5678">
 
                 <div class="check" id="check">
                     <p>¿Es la primera vez que nos contacta?&nbsp </p>
                     <label class="form-tags" for="es-cliente" id="si">Si</label>
-                    <input type="radio" name="form-tags">
+                    <input type="radio" name="es-primera-vez">
                     <label class="form-tags" for="es-cliente" id="no">No</label>
-                    <input type="radio" name="form-tags">
+                    <input type="radio" name="es-primera-vez">
                 </div>
 
                 <div class="check" id="check">
                     <p>Su mensaje es:&nbsp</p>
                     <label class="form-tags" for="es-consulta" id="consulta">Consulta</label>
-                    <input type="radio" name="form-tags-consulta">
+                    <input type="radio" name="es-consulta">
                     <label class="form-tags" for="es-reclamo" id="reclamo">Reclamo</label>
-                    <input type="radio" name="form-tags-consulta">
+                    <input type="radio" name="es-consulta">
                 </div>
 
                 <div class="avatar">
@@ -87,7 +87,7 @@
 
                 </div>
                 <label class="form-tags" for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="5" id="mensaje" name="mensaje" class="input-form" required
+                <textarea cols="70" rows="5" id="mensaje" name="mensaje" class="input-form"
                     placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
                 <div>
                     <input type="submit" value="Enviar " class="enviar">
@@ -102,7 +102,6 @@
                 value="Hola! Hemos recibido tu mensaje, pronto te estaremos contactando.">
 
         </form>
-
     </main>
 
     <footer>
