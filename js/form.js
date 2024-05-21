@@ -43,7 +43,6 @@ document.getElementById('formulario').addEventListener('submit', function (event
     if (!mensajeTipo) {
         mensajeError += 'Debe seleccionar el tipo de mensaje (Consulta o Reclamo).\n';
     }
-    
     // Validar el archivo de imagen (si es reclamo)
     if (mensajeTipo && mensajeTipo.value === 'reclamo') {
         if (!avatar) {
