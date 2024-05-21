@@ -1,5 +1,5 @@
 
-document.getElementById('formulario').addEventListener('submit', function(event) {
+document.getElementById('formulario').addEventListener('submit', function (event) {
     // Prevenir el envío del formulario
     event.preventDefault();
 
@@ -9,7 +9,10 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     var tel = document.getElementById('tel').value.trim();
     var mensaje = document.getElementById('mensaje').value.trim();
     var tipoContacto = document.getElementById('sel-tipo').value;
-    
+    var primeraVez = document.querySelector('input[name="es-primera-vez"]:checked');
+    var mensajeTipo = document.querySelector('input[name="es-consulta"]:checked');
+    var avatar = document.getElementById('avatar').files[0];
+
     // Variable para almacenar mensajes de error
     var mensajeError = '';
 
@@ -33,7 +36,29 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     } else if (!/^\d{3} \d{3} \d{6}$/.test(tel)) {
         mensajeError += 'El formato del Teléfono debe ser 011 154 123456.\n';
     }
-
+    // Validar radio buttons
+    if (!primeraVez) {
+        mensajeError += 'Debe seleccionar si es la primera vez que nos contacta.\n';
+    }
+    if (!mensajeTipo) {
+        mensajeError += 'Debe seleccionar el tipo de mensaje (Consulta o Reclamo).\n';
+    }
+    
+    // Validar el archivo de imagen (si es reclamo)
+    if (mensajeTipo && mensajeTipo.value === 'reclamo') {
+        if (!avatar) {
+            mensajeError += 'Debe subir un comprobante si es un reclamo.\n';
+        } else {
+            const validImageTypes = ['image/jpeg', 'image/png'];
+            if (!validImageTypes.includes(avatar.type)) {
+                mensajeError += 'El archivo debe ser una imagen (JPEG, PNG).\n';
+            }
+            const maxSizeInBytes = 2 * 1024 * 1024; // 2MB
+            if (avatar.size > maxSizeInBytes) {
+                mensajeError += 'El archivo debe ser menor de 2MB.\n';
+            }
+        }
+    }
     // Validar la selección de tipo de contacto
     if (tipoContacto === 'sel-tipo') {
         mensajeError += 'Debe seleccionar un tipo de contacto.\n';
@@ -54,6 +79,3 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         return true;
     }
 });
-
-
-
