@@ -16,6 +16,10 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     min-height: 100vh;
 }
+.botones{
+    display: flex;
+    justify-content: center;
+}
 
 .check {
     display: flex;
@@ -91,6 +95,7 @@ body {
     justify-content: center;
     column-gap: 10px;
     margin-bottom: 25px;
+    
 }
 
 .cont-logo {
@@ -115,7 +120,7 @@ body {
 
 .enviar {
     /* display: flex; */
-    width: 40%;
+    width: 30%;
     padding: 0.3em 0.1em;
     font-size: 1em;
     font-weight: bold;
@@ -389,6 +394,7 @@ label {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 1em 0;
 }
 
 .titulo-principal {
