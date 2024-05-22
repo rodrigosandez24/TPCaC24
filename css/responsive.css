@@ -80,6 +80,13 @@
         gap: 0.6em;
         margin: 1em; 
     }
+    .check1 {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 0.6em;
+        margin: 1em; 
+    }
 
     .cont-serv {
         display: flex;
@@ -196,6 +203,13 @@
         gap: 0.6em;
         margin: 1em; 
     }
+    .check1 {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 0.6em;
+        margin: 1em; 
+    }
 
     .cont-serv {
         display: flex;
@@ -253,6 +267,13 @@
         /*Para que el ancho del footer sea siempre el ancho del viewport */
     }
     .check {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 0.6em;
+        margin: 1em; 
+    }
+    .check1 {
         display: flex;
         flex-direction: row;
         align-items: baseline;

@@ -29,6 +29,13 @@ body {
     margin: 0.5em;
 }
 
+.check1 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.2em;
+    margin: 0.5em;
+}
 /* Estilos para el contenedor de la barra de navegación */
 .cont-nav {
     display: flex;
@@ -95,7 +102,7 @@ body {
     justify-content: center;
     column-gap: 10px;
     margin-bottom: 25px;
-    
+
 }
 
 .cont-logo {
